@@ -565,7 +565,10 @@ sock.sendMessage(jid, {
       name: '🔥 Voting time',
       values: ['Yes', 'No'],
       selectableCount: 1,
-      toAnnouncementGroup: false
+      toAnnouncementGroup: false,
+      endDate: new Date(Date.now() + 28800000), // --- Optional
+      hideVoter: false, // --- Optional
+      canAddOption: false // --- Optional
    }
 }, {
    quoted: message
